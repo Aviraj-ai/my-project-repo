@@ -1,0 +1,14 @@
+version: "3.0"
+
+nlu:
+- intent: inquire_hiring_policy
+  examples: |
+    - What is the hiring policy?
+    - Can you tell me about the hiring process?
+    - What are the requirements for hiring?
+
+- intent: inquire_leave_policy
+  examples: |
+    - What are the leave policies?
+    - How many vacation days do I get?
+    - Can I take a sick leave?

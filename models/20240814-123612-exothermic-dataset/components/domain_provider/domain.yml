@@ -1,0 +1,44 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- inquire_hiring_policy
+- inquire_leave_policy
+- mood_great
+- mood_unhappy
+entities:
+- policy_type
+slots:
+  policy_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: policy_type
+responses:
+  utter_greet:
+  - text: Hey! How can I assist you today?
+  utter_goodbye:
+  - text: Goodbye! Have a great day!
+  utter_inquire_hiring_policy:
+  - text: 'Here is the information on our hiring policy: {policy_text}'
+  utter_inquire_leave_policy:
+  - text: 'Here is the information on our leave policy: {policy_text}'
+  utter_cheer_up:
+  - text: Here is something to cheer you up!
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_did_that_help:
+  - text: Did that help you?
+actions:
+- action_inquire_hiring_policy
+- action_inquire_leave_policy
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

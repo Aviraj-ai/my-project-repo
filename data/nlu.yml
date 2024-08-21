@@ -1,0 +1,75 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+      - howdy
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - take care
+
+  - intent: inquire_hiring_policy
+    examples: |
+      - What is the hiring policy?
+      - Can you tell me about the hiring policy?
+      - Explain the hiring policy
+      - What are the hiring guidelines?
+      - How do we hire new employees?
+      - Tell me about the recruitment process
+
+  - intent: inquire_leave_policy
+    examples: |
+      - What is the leave policy?
+      - How does the leave policy work?
+      - Tell me about the leave policy
+      - How can I apply for leave?
+      - What are the leave rules?
+      - How many leaves can I take?
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that is correct
+      - right
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - no way
+      - not at all
+
+  - intent: mood_great
+    examples: |
+      - I am feeling great
+      - I'm doing well
+      - I'm feeling awesome
+      - I'm very happy
+
+  - intent: mood_unhappy
+    examples: |
+      - I am feeling down
+      - I'm not doing well
+      - I'm sad
+      - I'm unhappy
+      - I'm feeling bad
+
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - What are you?
+      - Who created you?
+      - Are you human?
+

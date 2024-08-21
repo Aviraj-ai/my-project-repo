@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+  - story: Greet and ask about hiring policy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: inquire_hiring_policy
+      - action: action_inquire_hiring_policy
+
+  - story: Greet and ask about leave policy
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: inquire_leave_policy
+      - action: action_inquire_leave_policy
+
+  - story: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: User is happy
+    steps:
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: User is unhappy
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+
+  - story: User challenges bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
